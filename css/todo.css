@@ -1,0 +1,108 @@
+body {
+    background-color: #eceff0;
+}
+
+body,
+input {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    color: #363639;
+}
+
+a {
+    text-decoration: none;
+    /* border-bottom: 1px dashed #363639; */
+}
+
+/* List */
+.list {
+    background-color: white;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.list .header {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0 0 10px 0;
+}
+
+/* Items */
+.items {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.items li:hover .item-button{
+    border: 2.5px solid #FFE002;
+    transition: 0.3s;
+}
+.items li:hover .done-button{
+    border: 2.5px solid #3B3B3B;
+    transition: 0.3s;
+}
+
+.items .item.done {
+    text-decoration: line-through;
+}
+
+.items li,
+.item-add .input {
+    border: 0;
+    border-bottom: 1.9px dashed #ccc;
+    padding: 15px 0;
+}
+
+.input {
+    width: 100%;
+}
+
+.input:focus{
+    outline: none;
+}
+/*item button */
+.item-button {
+    display: inline-block;
+    height: 1.1rem;
+    width: 1.1rem;
+    background-color: #FFE002;
+    box-shadow: 0 0 3px gray;
+    border-radius: 50%;
+    border: 2.5px solid #f5f5f5;
+}
+
+.done-button {
+    display: inline-block;
+    height: 1.1rem;
+    width: 1.1rem;
+    background-color: #3B3B3B;
+    box-shadow: 0 0 3px gray;
+    border-radius: 50%;
+    border: 2.5px solid #f5f5f5;
+}
+/* delete button */
+.delete-button {
+    margin: auto 10px;
+    float:right;
+    color: black;
+    font-size: 2rem;
+}
+
+.delete-button:hover {
+    color: red;
+    transition: 0.3s;
+}
+/* Submit button */
+.submit{
+    background-color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: 3px 3px 0 #ddd;
+}
